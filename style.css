@@ -1,0 +1,298 @@
+/* 存放CSS样式的文件 */
+/*  <!-- header头部模块开始 --> */
+/* 清除内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 版心1200水平居中 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+/* 清除列表样式 */
+li {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(253, 251, 249);
+  height: auto;
+}
+
+
+.header {
+
+  height: 60px;
+  background-color: rgb(253, 251, 249);
+  margin: 30px auto;
+
+}
+
+/* 浮动 */
+.writing {
+  float: left;
+  margin-right: 30px;
+}
+
+.nav {
+  float: left;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 30px;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+/* 边框 */
+.nav ul li a:hover {
+  border-bottom: 5px solid rgb(5, 97, 133);
+}
+
+/* <!-- header头部模块结束 --> */
+
+/* banner部分开始 */
+.ad-l {
+  position: fixed;
+  top: 120px;
+  left: 0;
+}
+
+.ad-r {
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
+
+.banner {
+  height: 532px;
+  background: rgb(137, 184, 253);
+  margin-top: 20px;
+}
+
+/* 轮动效果开始 */
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.active {
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 对于其他网页点击后的网页图片处理开始 */
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  /* 防止图片溢出 */
+}
+
+.other-slider {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* 移除图片下方的间隙 */
+}
+
+.image-container1 {
+  width: 100%;
+  overflow: hidden;
+  /* 防止图片溢出 */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.other-slider1 {
+  position: relative;
+  width: 100%;
+  /* 让图片宽度占满容器 */
+  height: auto;
+  /* 高度自动调整 */
+  display: block;
+  /* 移除图片下方的间隙 */
+  /* margin-top: 40px */
+}
+
+
+/* 对于其他网页点击后的网页图片处理结束 */
+/* 轮动效果结束 */
+.banner-image1 {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* 保持图片的宽高比 */
+  margin-top: 500px;
+}
+
+.banner-image2 {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  /* 保持图片的宽高比 */
+  margin-top: 0px;
+}
+
+/* banner部分结束 */
+/* goods开始 */
+.middle {
+  height: 60px;
+  background-color: rgb(253, 251, 249);
+  margin: 15px auto;
+  /* 使用auto来水平居中 */
+
+}
+
+/* 浮动 */
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  /* 主轴方向为垂直 */
+  align-items: center;
+  /* 垂直居中子元素 */
+}
+
+.nav1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* 允许子元素换行 */
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* 或者你需要的宽度 */
+}
+
+.nav1 ul li {
+  margin: 60px 55px;
+  width: calc(33.333% - 100px);
+  box-sizing: border-box;
+  /* 包括padding和border在内计算元素的总宽度和高度 */
+}
+
+.nav1 ul li a {
+  display: block;
+  /* 改为block或flex，以便更好地控制内部元素 */
+  width: 100%;
+  /* 填充整个li的宽度 */
+  height: 60px;
+  background-color: rgb(161, 226, 247);
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 55px;
+  /* 调整为与高度相同，确保文本垂直居中 */
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+/* 边框 */
+.nav1 ul li a:hover {
+  background-color: chocolate;
+  color: #fefefe;
+}
+
+/* footer底部开始 */
+.footer {
+  height: 200px;
+  background-color: rgb(137, 184, 253);
+  padding-top: 100px;
+}
+
+.mod_service {
+  height: 100px;
+  background: rgb(137, 184, 253);
+}
+
+/* footer底部结束 */
+
+/* goods 结束 */
+/* h字体 */
+h1 {
+  color: black;
+  /* font-size: 30px;
+  font-family: "黑体"; */
+  font: italic 700 30px "黑体";
+}
+
+h2 {
+  color: black;
+  /* font-size: 30px;
+  font-family: "黑体"; */
+  font: normal 500 30px "黑体";
+  margin-top: 30px;
+}
+
+h5 {
+  color: black;
+  /* font-size: 30px;
+  font-family: "黑体"; */
+  font: normal 450 30px "黑体";
+}
+
+h3 {
+  color: black;
+  /* font-size: 30px;
+  font-family: "黑体"; */
+  font: italic 400 20px "黑体";
+}
+
+h4 {
+  color: black;
+  /* font-size: 30px;
+  font-family: "黑体"; */
+  font: normal 400 25px "黑体";
+  text-align: center;
+}
+
+.title3 {
+  font-size: 20px;
+}

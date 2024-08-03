@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Come on!</title>
+  <style>
+    .title {
+      font: italic 300 20px "黑体"
+    }
+
+    /* 水平居中对齐 */
+    .tac {
+      text-align: center
+    }
+
+    .tacc {
+      display: flex;
+      /* 启用Flexbox容器 */
+      justify-content: space-between;
+      /* 两端对齐 */
+      align-items: center;
+      /* 子元素在交叉轴上的中心对齐 */
+
+    }
+
+    /* 右对齐 */
+    .tar {
+      text-align: right;
+    }
+
+    .search {
+      color: darkgreen;
+    }
+
+    .btn {
+      color: chocolate;
+    }
+
+    p {
+      font-weight: bold;
+      /* 字体加粗 */
+      font-size: 22px;
+      /* 字体大小设置为24像素 */
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="tac">加入我们</h2>
+  <div class="tacc">
+    <span class="title">Come on!</span>
+    <div>
+      <input type="text" value="请输入相关词查询" class="search" />
+      <input type="button" value="搜索" class="btn">
+    </div>
+  </div>
+  <hr />
+  <!-- 标题加斜线 -->
+  <div class="image-container">
+    <img src="images/加入我们.jpg" alt="加入我们" class="other-slider">
+  </div>
+  <td>
+    <p>
+      自动化实验室现已面向2024届信控学院、机电学院所有专业新生进行新生纳新，欢迎加入我们!
+    </p>
+    <!--  footer底部开始  -->
+    <div class="footer">
+      <div class="w">
+        <div class="mod_service">
+          <h4>实验室地址：吉林化工学院机电4楼实验室</h4>
+          <h4>注：本网站仅供实验室学习使用，不可用于商业用途！！！</h4>
+          <h4>郑重声明：一切联系你的自称老师学长并索要培训费书课费的都是诈骗，大家谨防诈骗！</h4>
+        </div>
+      </div>
+    </div>
+    <!--  footer底部结束  -->
+  </td>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>实验室简介</title>
+  <style>
+    .title {
+      font: italic 300 20px "黑体"
+    }
+
+    /* 水平居中对齐 */
+    .tac {
+      text-align: center
+    }
+
+    .tacc {
+      display: flex;
+      /* 启用Flexbox容器 */
+      justify-content: space-between;
+      /* 两端对齐 */
+      align-items: center;
+      /* 子元素在交叉轴上的中心对齐 */
+
+    }
+
+    /* 右对齐 */
+    .tar {
+      text-align: right;
+    }
+
+    .search {
+      color: darkgreen;
+    }
+
+    .btn {
+      color: chocolate;
+    }
+
+    p {
+      line-height: 40px;
+      /* 首行缩进 */
+      text-indent: 2em;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="tac">实验室简介</h2>
+  <div class="tacc">
+    <span class="title">Laboratory introduction</span>
+    <div>
+      <input type="text" value="请输入相关词查询" class="search" />
+      <input type="button" value="搜索" class="btn">
+    </div>
+  </div>
+  <hr />
+  <!-- 标题加斜线 -->
+  <div class="image-container">
+    <img src="images/实验室简介.jpg" alt="实验室简介" class="other-slider">
+  </div>
+  <td>
+    <p>
+
+      自动化实验室主要是以各类学科竞赛为主的实验室，我们实验室以硬件设计、软件编程为主要学习方向，主要包括单片机设计，PCB设计，物联网开发，电路设计与焊接，视觉处理，主流语言程序设计，Linux、Ubuntu、Debian等主流系统以及机械3D三维设计，文档处理等。学习面广，程度较深，经过综合的学习后可以参加学科竞赛，完成相应项目的开发与制作。
+
+    </p>
+    <p>
+      在日常的学习中，目前有吉林大学的博士老师，以及信控学院电工电子教学老师给予知识上的补充与指导。同时拥有企业大咖以及研究生进行项目指导。实验室主张以老带新，直系学长会进行实践方面的指导，以做到理论和实践相结合的学习效果。
+    </p>
+    <p>
+      截止2024年，自动化实验室新进3D打印机以及开发板无数，共享学习资料数千T，以供学生进行选择和学习。
+    </p>
+    <p>
+      在学科竞赛中，实验室在2023年至2024年9月荣获国家级奖项两项，省级特等奖两项，省级一等奖11项，省级二等奖7项，省级三等奖1项，校级奖项无数。
+    </p>
+  </td>
+  <!--  footer底部开始  -->
+  <div class="footer">
+    <div class="w">
+      <div class="mod_service">
+        <h4>实验室地址：吉林化工学院机电4楼实验室</h4>
+        <h4>注：本网站仅供实验室学习使用，不可用于商业用途！！！</h4>
+        <h4>郑重声明：一切联系你的自称老师学长并索要培训费书课费的都是诈骗，大家谨防诈骗！</h4>
+      </div>
+    </div>
+  </div>
+  <!--  footer底部结束  -->
+</body>
+
+</html>
